@@ -14,13 +14,19 @@
   и выводя на экран результаты
 
 """
+def this_line(line_1, line_2):
+    if  not isinstance(line_1, str) and not isinstance(line_2, str):
+        return 0
+    elif str(line_1) == str(line_2):
+        return 1
+    elif len(line_1) > len(line_2):
+        return 2
+    elif line_2 == 'learn':
+        return 3
 
 def main():
-    """
-    Эта функция вызывается автоматически при запуске скрипта в консоли
-    В ней надо заменить pass на ваш код
-    """
-    pass
+   print(this_line('learn','learn' ))
+   
     
 if __name__ == "__main__":
     main()
